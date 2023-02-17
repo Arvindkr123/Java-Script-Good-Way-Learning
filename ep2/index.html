@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your browser</title>
+</head>
+<body>
+    <script>
+        // document.write("Code name of your browser "+navigator.appCodeName);
+        // document.write("Know your location "+navigator.geolocation);
+        // document.writeln("you are online "+navigator.onLine)
+        // document.writeln(navigator.language)
+        // document.writeln(navigator.appVersion)
+        // document.writeln(navigator.canShare)
+        // document.writeln(navigator.clipboard)
+        // document.writeln(navigator.credentials)
+        // document.writeln(navigator.languages)
+        // document.writeln(navigator.pdfViewerEnabled)
+
+        // var plugins = navigator.plugins['Flash player'];
+        // var plugins = navigator.plugins['chrome pdf plugins'];
+        // var plugins = navigator.plugins['Chrome PDF Viewer'];
+        // // console.log(plugins);
+        // if(plugins){
+        //     console.log("Present");
+        // }else{
+        //     console.log("Not present");
+        // }
+
+        navigator.geolocation.getCurrentPosition(showPosition);
+        function showPosition(position){
+            console.log("Latitude"+ position.coords.latitude +"\n" +"Longitude "+position.coords.longitude);
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(new Date());
+    </script>
+    <noscript>
+        hello bhai
+    </noscript>
+</body>
+</html> -->
